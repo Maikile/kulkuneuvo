@@ -20,7 +20,7 @@ public class Vehicle {
 
     public void printVehicles(){
         for (VehicleList vehicleList : vehicleLists) {
-            System.out.println(type+": "+model);
+            System.out.println(type+": "+manufacturer+" "+model);
             if(type == "Auto"){
                 System.out.println("Moottori: "+engine.getCarEng()+" "+engine.getCarPower()+"kW");
             }
@@ -30,7 +30,7 @@ public class Vehicle {
             if(type == "Laiva"){
                 System.out.println("Moottori: "+engine.getShipEng()+" "+engine.getShipPower()+"kW");
             }
-            System.out.println("Huippunopeus: "+maxSpeed);
+            System.out.println("Huippunopeus: "+maxSpeed+"km/h");
             System.out.println();
         }
     }
